@@ -1,7 +1,13 @@
 
 
+### Deployment
 
-kubectl get nodes --kubeconfig ~/.kube/config
+```
+terraform init
+terraform plan -var-file=eks.tfvars
+terraform apply -var-file=eks.tfvars
+```
+
 
 
 1. To see the configuration of your AWS CLI user or role, run the following command:
